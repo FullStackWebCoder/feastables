@@ -65,21 +65,21 @@ const HeroSection = () => {
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
-        {(
+        {
           <>
             {isMobile ? (
               <img
                 src="/images/Chocolate_PB_60g_Carton.webp"
                 className="absolute bottom-0 w-full object-cover"
               />
-            ): (
+            ) : (
               <img
-              src="/images/hero.webp"
-              className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
-            />
+                src="/images/hero.webp"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
+              />
             )}
           </>
-        )}
+        }
         <div className="hero-content opacity-0">
           <div className="overflow-hidden">
             <h1 className="hero-title">Feastables</h1>
@@ -96,14 +96,25 @@ const HeroSection = () => {
           </div>
 
           <h2>
-            At Feastables, ethical sourcing is at our core. Through our three pillars, we help move kids out of cocoa fields and into classrooms—driving our mission to eradicate child labor in chocolate. 
+            At Feastables, ethical sourcing is at our core. Through our three
+            pillars, we help move kids out of cocoa fields and into
+            classrooms—driving our mission to eradicate child labor in
+            chocolate.
           </h2>
 
-          <Link to='/products'>
-            <div className="button mt-4">
-              <p>Explore More</p>
-            </div>
-          </Link>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
+            <Link to="/products">
+              <div className="button mt-4">
+                <p>Explore More</p>
+              </div>
+            </Link>
+
+            <Link to="/about">
+              <div className="button mt-4">
+                <p>About Us</p>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

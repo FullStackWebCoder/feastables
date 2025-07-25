@@ -66,14 +66,7 @@ const FooterSection = () => {
         <div className="mt-40 md:px-10 px-5 flex gap-10 md:flex-row flex-col justify-between text-milk font-paragraph md:text-lg font-medium">
           <div className="flex items-center md:gap-16 gap-5">
             <div>
-              <p>Feastables Flavors</p>
-            </div>
-            <div>
-              <p>Milk Chocolate</p>
-              <p>Cookies & Creme</p>
-              <p>Peanut Butter</p>
-              <p>Almond Chocolate</p>
-              <p>Dark Chocolate sea salt</p>
+              <p>Feastables</p>
             </div>
             <div>
               <p>Contacts</p>
@@ -101,8 +94,8 @@ const FooterSection = () => {
           {/* The final row with copyright and legal links. */}
           <p>Copyright © 2025 Feastables - All Rights Reserved</p>
           <div className="flex items-center gap-7">
-            <p>Privacy Policy</p>
-            <p>Terms of Service</p>
+            <p className="cursor-pointer">Privacy Policy</p>
+            <p className="cursor-pointer">Terms of Service</p>
           </div>
         </div>
       </div>
